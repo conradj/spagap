@@ -5,7 +5,7 @@ var Main = (function () {
     }
 
     Main.init = function () {
-        alert("Hello Worlds");
+        notification.alert("Hello Worlds");
     }
 
     return Main;
