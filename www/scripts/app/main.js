@@ -6,9 +6,13 @@ var Main = (function () {
 
     Main.init = function () {
         //alert("Hello Worldsfdfd");
-        document.getElementById("message").innerHTML = "Hello World";
-        navigator.notification.vibrate(1000);
+        document.getElementById("message").innerHTML = "Hello Conrad";
+        
         //navigator.notification.alert("Hello PG Worlds");
+    }
+    
+    Main.vibrate = function(ms) {
+        navigator.notification.vibrate(ms);
     }
 
     return Main;
