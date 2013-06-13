@@ -1,5 +1,12 @@
 var Main = (function () {
-  
-  alert("Hello World");
-  
-}(Main || {}));
+
+    function Main() {
+
+    }
+
+    Main.init = function () {
+        alert("Hello Worlds");
+    }
+
+    return Main;
+}());
