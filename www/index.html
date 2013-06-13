@@ -7,7 +7,16 @@
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="scripts/app/main.js"></script>
         <script>
-            Main.init();
+            // Wait for Cordova to load
+            //
+            document.addEventListener("deviceready", onDeviceReady, false);
+
+            // Cordova is ready
+            //
+            function onDeviceReady() {
+                // Empty
+                Main.init();
+            }
         </script>
     </body>
 </html>
