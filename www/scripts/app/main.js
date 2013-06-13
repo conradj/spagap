@@ -5,7 +5,7 @@ var Main = (function () {
     }
 
     Main.init = function () {
-        navigator.notification("Hello Worlds");
+        navigator.notification.alert("Hello Worlds");
     }
 
     return Main;
