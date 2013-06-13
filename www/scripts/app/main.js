@@ -5,9 +5,9 @@ var Main = (function () {
     }
 
     Main.init = function () {
-        alert("Hello World");
-        navigator.notification.vibrate(1000);
-        navigator.notification.alert("Hello PG Worlds");
+        alert("Hello Worlds");
+        //navigator.notification.vibrate(1000);
+        //navigator.notification.alert("Hello PG Worlds");
     }
 
     return Main;
