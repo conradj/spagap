@@ -5,9 +5,14 @@
     <body>
         <h1>PhoneGap Hello!</h1>
         <span id="message"></span>
-        <button onclick="Main.vibrate(500)">Vibrate</button>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="scripts/app/main.js"></script>
+        Milliseconds: <input type="range" id="milliseconds" min="250" max="2000">
+        <button onclick="Main.vibrate()">Vibrate</button>
+
+
+        <script src="phonegap.js"></script>
+        <script type="text/javascript" src="PushNotification.js"></script>
+        <script src="scripts/app/main.js"></script>
+
         <script>
             // Wait for Cordova to load
             //
@@ -16,7 +21,7 @@
             // Cordova is ready
             //
             //function onDeviceReady() {
-                
+                // Empty
                 Main.init();
             //}
         </script>
