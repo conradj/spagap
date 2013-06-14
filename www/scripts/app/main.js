@@ -6,13 +6,14 @@ var Main = (function () {
 
     Main.init = function () {
         //alert("Hello Worldsfdfd");
-        document.getElementById("message").innerHTML = "Hello Conrad";
-        
+        document.getElementById("message").innerHTML = "Hello World";
+        //navigator.notification.vibrate(1000);
         //navigator.notification.alert("Hello PG Worlds");
     }
-    
-    Main.vibrate = function(ms) {
-        navigator.notification.vibrate(ms);
+
+    Main.vibrate = function () {
+        alert("Vibrate for " + milliseconds.value + " milliseconds");
+        navigator.notification.vibrate(milliseconds.value);
     }
 
     return Main;
